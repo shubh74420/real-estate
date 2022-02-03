@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "6698bec6-00f5-4e3e-bdae-b3236f25365c",
+		"name": "Real-Estate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Charley",
+							"type": "text"
+						},
+						{
+							"key": "real_estate_type",
+							"value": "commercial_ground",
+							"type": "text"
+						},
+						{
+							"key": "external_number",
+							"value": "RR-123-FG",
+							"type": "text"
+						},
+						{
+							"key": "internal_number",
+							"value": "We 45-56",
+							"type": "text"
+						},
+						{
+							"key": "neighborhood",
+							"value": "Alexa",
+							"type": "text"
+						},
+						{
+							"key": "street",
+							"value": "Coleman Falls",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Camden",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "US",
+							"type": "text"
+						},
+						{
+							"key": "rooms",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "bathrooms",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "comments",
+							"value": "Doloribus veritatis et eum omnis est odio.",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/real_estate"
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Charley1",
+							"type": "text"
+						},
+						{
+							"key": "real_estate_type",
+							"value": "commercial_ground",
+							"type": "text"
+						},
+						{
+							"key": "external_number",
+							"value": "RR-123-FG",
+							"type": "text"
+						},
+						{
+							"key": "internal_number",
+							"value": "We 45-56",
+							"type": "text"
+						},
+						{
+							"key": "neighborhood",
+							"value": "Alexa",
+							"type": "text"
+						},
+						{
+							"key": "street",
+							"value": "Coleman Falls",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Camden",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "US",
+							"type": "text"
+						},
+						{
+							"key": "rooms",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "bathrooms",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "comments",
+							"value": "Doloribus veritatis et eum omnis est odio.",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://127.0.0.1:8000/api/real_estate/1"
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://127.0.0.1:8000/api/real_estate/1"
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": "http://127.0.0.1:8000/api/real_estate"
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": "http://127.0.0.1:8000/api/real_estate/1"
+			},
+			"response": []
+		}
+	]
+}
